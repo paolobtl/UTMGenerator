@@ -1,0 +1,120 @@
+/* Reset some default styles */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply some basic styling to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Style the header */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style the form container */
+#paragraph,
+#utm-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+#paragraph {
+  margin: 30px 0;
+  line-break: normal;
+}
+
+/* Style form labels and inputs */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input[type="url"],
+input[type="text"] {
+  text-align: left;
+  width: 100%;
+  padding: 10px 0 10px 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style the message box */
+.message-box {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style the result paragraph */
+#utm-result {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+#clipboard {
+  fill: gray;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  color: white;
+  font-size: 12px;
+  background-color: #04d300;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

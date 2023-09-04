@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>UTM Builder</title>
+  </head>
+  <body>
+    <h1>UTM Builder</h1>
+
+      <div id="paragraph">
+        <p>
+          Un generatore UTM è uno strumento utile per il tracciamento delle campagne
+          di marketing online. <br>
+          Questo strumento consente ai marketer di aggiungere
+          parametri UTM (Urchin Tracking Module) ai loro URL, aiutandoli a
+          monitorare l'efficacia delle loro campagne pubblicitarie e promozionali. <br>
+          I parametri UTM includono informazioni come la fonte, il medium, la campagna
+          e altro ancora. Con un generatore UTM, è possibile creare URL con questi
+          parametri in modo rapido e accurato, consentendo un'analisi dettagliata
+          delle performance delle diverse strategie di marketing. <br>
+          Questo strumento è particolarmente prezioso per ottimizzare il budget di pubblicità e
+          prendere decisioni informate per migliorare il rendimento delle campagne
+          digitali.
+        </p>
+      </div>
+
+    <form id="utm-form">
+      <label for="url">URL:</label>
+      <input type="url" id="url" name="url" required />
+      <label for="utm-source">Source:*</label>
+      <input type="text" id="utm-source" name="utm_source" required />
+
+      <label for="utm-medium">Medium:*</label>
+      <input type="text" id="utm-medium" name="utm_medium" required />
+
+      <label for="utm-campaign">Campaign name:*</label>
+      <input type="text" id="utm-campaign" name="utm_campaign" required />
+
+      <label for="utm-term">Term:</label>
+      <input type="text" id="utm-term" name="utm_term" />
+
+      <label for="utm-content">Content:</label>
+      <input type="text" id="utm-content" name="utm_content" />
+
+      <span class="message-box"></span>
+    </form>
+
+    <p id="utm-result"></p>
+  </body>
+</html>
